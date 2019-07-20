@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>INVIE - Tus guitarras ideales!!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--flex">
+        <div class="logo__header column column--50">
+          <img src="images/invie.png" alt="invie.png">
+        </div>
+          <div class="column column--50">
+            <nav class="main__nav">
+              <span class="icon-menu" id="btnmenu"></span>
+              <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Home</a></li>
+                <li class="menu__item"><a href="#main__title" class="menu__link">Guitarras</a></li>
+                <li class="menu__item"><a href="precios.html" class="menu__link">Precios</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </header>
+    <section class="banner">
+      <img src="images/background.png" alt="background.png" class="banner__img">
+      <div class="banner__content container">
+        <h1>Guitarras <span>Invie</span>sibles</h1>
+        <h2>Sé la estrella de rock que siempre quisiste ser</h2>
+        <a href="#main__title" class="button btn--conoce">Conoce más</a>
+      </div>
+    </section>
+    <main class="main">
+      <div class="container container--flex">
+        <h2 class="main__title" id="main__title">Nuestras guitarras</h2>
+        <section class="section__acustica">
+          <div class="container container--flex">
+            <div class="column column--50">
+              <h3 class="title__acustica">Invie Acustica</h3>
+              <ol class="acustica__list">
+                <li>Estilo vintage</li>
+                <li>Madera pura</li>
+                <li>Incluye estuche invisible de aluminio</li>
+              </ol>
+            </div>
+            <div class="column column--50">
+              <img src="images/invie-acustica.png" alt="invie-acustica.png" class="acustica__img">
+            </div>
+          </div>
+        </section>
+        <section class="section__classic">
+          <div class="container container--flex">
+            <div class="column column--50">
+              <img src="images/invie-classic.png" alt="invie-classic.png" class="classic__img">
+            </div>
+            <div class="column column--50">
+              <h3 class="title__classic">Invie Classic</h3>
+              <ol class="classic__list">
+                <li>Estilo vintage</li>
+                <li>Liviana</li>
+                <li>Inicia tu camino como Rockstar</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <form class="container container--flex formulario" action="index.html" method="post">
+        <div class="column column--33">
+          <div class="img__logo">
+            <img src="images/invie-white.png" alt="invie-white.png" class="logo__footer">
+          </div>
+          <div class="footer__phonemail">
+            <div class="footer__phone">
+              <a href="tel:+573024567890" class="phone"> <strong class="icon-phone">Telefono</strong> <span>3024567890</span> </a>
+            </div>
+            <div class="footer__mail">
+              <a href="mailto:contacto@invie.com" class="mail"> <strong class="icon-mail">E-mail</strong> <span>contacto@invie.com</span> </a>
+            </div>
+          </div>
+        </div>
+        <div class="column column--33">
+          <div class="nombre__mail-intereses">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre" />
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email" />
+          </div>
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="sexo" value="mujer" checked> Mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" id="hombre" name="sexo" value="hombre"> Hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <div class="interes1">
+              <label for="cotizacion">
+                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked /> Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclasmos" /> Reclamos
+              </label>
+            </div>
+            <div class="intereses2">
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios" /> Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros" /> Otros
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="comentarios column column--33">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="comentarios" id="comentarios" rows="7" cols="30" class="formulario__textarea"></textarea>
+          <input type="submit" name="" value="Enviar" class="button btn__enviar">
+        </div>
+      </form>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

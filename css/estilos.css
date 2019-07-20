@@ -1,0 +1,549 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Allerta', sans-serif;
+  margin: 0;
+}
+
+/*---------------------- Estilos base ---------------------------*/
+
+img
+{
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  margin: 0;
+}
+
+.container
+{
+  width: 100%;
+  margin: auto;
+}
+
+.container--flex
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column
+{
+  width: 100%
+}
+
+.button
+{
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  background: linear-gradient(to left, #FE344E, #FF7250);
+  color: #FFFFFF;
+  padding: 7px 12px;
+  margin: 20px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn__enviar
+{
+  width: 30%;
+}
+
+/*---------------------- Estilos header ---------------------------*/
+
+.header
+{
+  width: 100%
+}
+
+.logo__header
+{
+  padding: 40px 10px 20px 10px;
+  z-index: 2000;
+  width: 186px;
+}
+
+/*---------------------- Estilos menú ---------------------------*/
+
+.main__nav
+{
+  width: 100%;
+  position: relative;
+  z-index: 2000;
+  padding: 10px;
+}
+
+.icon-menu
+{
+  display: block;
+  color: #FFFFFF;
+  background: linear-gradient(to left, #FE344E, #FF7250);
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.menu
+{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF;
+  /* list-style: none; */
+  text-align: center;
+  height: 0;
+  /* overflow: hidden; */
+  transition: height .3s linear;
+}
+
+.menu__link
+{
+  display: block;
+  padding: 35px 15px 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.menu__link:hover
+{
+  background: #FE344E;
+}
+
+.menu__link--select
+{
+  background: linear-gradient(to left, #FE344E, #FF7250);
+}
+
+.mostrar
+{
+  height: 190px;
+}
+
+/*---------------------- Estilos banner ---------------------------*/
+
+.banner
+{
+  margin-top: -180px;
+  position: relative;
+}
+
+.banner__img
+{
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+}
+
+.banner__content
+{
+  width: 90%;
+  color: #FFFFFF;
+  text-align: left;
+  position: absolute;
+  z-index: 1500;
+  top: 36%;
+  left: 0;
+  right: 0;
+  /* transform: translateX(15%); */
+  font-size: 2em;
+}
+
+.banner__content h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 55px;
+}
+
+.banner__content h2
+{
+  font-size: 24px;
+  margin: 0 0 24px 0;
+}
+
+.banner__content span
+{
+  text-decoration: underline;
+}
+
+/*---------------------- Estilos principales ---------------------------*/
+.main__title
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px;
+  padding: 30px 10px 10px 20px;
+}
+
+.title__acustica, .title__classic
+{
+  font-size: 50px;
+  padding: 30px 30px 0 30px;
+}
+
+.acustica__list, .classic__list
+{
+  font-size: 16px;
+}
+
+.classic__list
+{
+  padding-bottom: 30px;
+}
+
+.section__acustica, .section__classic
+{
+  border: 2px solid #1F313C;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.acustica__img
+{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+/*---------------------- Estilos footer ---------------------------*/
+
+input:focus, textarea:focus
+{
+  background: #E0E0E0;
+}
+
+input, textarea
+{
+  outline: 0;
+}
+
+.footer
+{
+  background: #273B47;
+}
+
+.logo__footer
+{
+  width: 258px;
+  padding: 30px 20px 15px 20px;
+}
+
+.footer [class*="icon-"]
+{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer [class*="icon-"]:before
+{
+  position: relative;
+  top: 2px;
+  right: 5px;
+  padding-left: 20px;
+}
+
+.phone, .mail, .formulario label
+{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__phone, .footer__mail
+{
+  padding: 5px 0 10px 0;
+}
+
+.phone, .mail
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.phone span, .mail span, .sexo
+{
+  padding: 10px;
+}
+
+.nombre__mail-intereses
+{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.nombre__mail-intereses input
+{
+  max-width: 170px;
+  margin: 10px 0;
+}
+
+.interes1, .intereses2
+{
+  padding: 5px 15px;
+}
+
+.comentarios
+{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+.formulario__textarea
+{
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+/*---------------------- Estilos responsive ---------------------------*/
+@media screen and (min-width:310px)
+{
+  .menu
+  {
+    overflow: hidden;
+  }
+
+  .menu__link
+  {
+    padding: 20px 20px 20px 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width:480px)
+{
+  .menu__link
+  {
+    padding: 20px 20px 20px 0;
+    margin-right: 0;
+  }
+
+  .banner__content h1
+  {
+    font-size: 70px;
+  }
+
+  .classic__img
+  {
+    width: 100%;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+  }
+
+  .footer__phonemail
+  {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0 10px 0;
+  }
+}
+
+@media screen and (min-width:768px)
+{
+  .column--50
+  {
+    width: 49%;
+  }
+
+  .column--33
+  {
+    width: 32%;
+  }
+
+  .logo__header
+  {
+    padding: 40px 10px 20px 10px;
+    width: 200px;
+  }
+
+  .icon-menu
+  {
+    display: none;
+  }
+
+  .menu
+  {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: visible;
+  }
+
+  .menu__link
+  {
+    font-size: 20px;
+    padding: 20px 20px 20px 0;
+    margin-right: 20px;
+  }
+
+  .menu__link:hover, .menu__link--select
+  {
+    background: none;
+  }
+
+  .section__acustica, .section__classic
+  {
+    margin: 20px;
+    max-height: 250px
+  }
+
+  .section__acustica .column--50:nth-child(1)
+  {
+    margin-bottom: 110px;
+  }
+
+  .section__classic .column--50:nth-child(2)
+  {
+    margin-bottom: 110px;
+  }
+
+  .acustica__img
+  {
+    width: 350px;
+    height: auto;
+    position: relative;
+    bottom: 102px;
+  }
+
+  .classic__img
+  {
+    width: auto;
+    height: 300px;
+    margin: 0;
+    object-fit: cover;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .title__classic, .classic__list
+  {
+    padding: 0 15px;
+  }
+
+  .main__title
+  {
+    font-size: 35px;
+  }
+
+  .mail span, .phone span
+  {
+    font-size: 14px;
+  }
+
+  .footer
+  {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width:1024px)
+{
+  .container
+  {
+    width: 80%;
+  }
+
+  .menu
+  {
+    overflow: visible;
+  }
+
+  .menu__link
+  {
+    font-size: 23px;
+    padding: 20px 20px 20px 0;
+    margin-right: 20px;
+  }
+
+  .section__acustica, .section__classic
+  {
+    margin: 20px 0;
+  }
+
+  .classic__img
+  {
+    width: auto;
+    height: 300px;
+    margin: 0;
+    object-fit: cover;
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+@media screen and (min-width:1200px)
+{
+  .container
+  {
+    width: 800px;
+  }
+
+  .menu__link
+  {
+    font-size: 24px;
+    padding: 20px 20px 20px 0;
+    margin-right: 20px;
+  }
+
+  .mail span, .phone span
+  {
+    font-size: 16px;
+  }
+
+  .section__acustica, .section__classic
+  {
+    margin: 10px 0;
+  }
+
+  .classic__img
+  {
+    width: auto;
+    height: 300px;
+    margin: 0;
+    object-fit: cover;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .footer
+  {
+    margin-top: 20px;
+  }
+
+  .footer .column--33:nth-child(2)
+  {
+    padding-left: 30px;
+  }
+
+  .intereses
+  {
+    font-size: 14px;
+  }
+}
