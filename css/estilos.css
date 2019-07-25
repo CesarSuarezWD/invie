@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6
 
 .btn__enviar
 {
-  width: 30%;
+  width: 33%;
 }
 
 /*---------------------- Estilos header ---------------------------*/
@@ -111,10 +111,8 @@ h1, h2, h3, h4, h5, h6
   padding: 0;
   margin: 0;
   color: #FFFFFF;
-  /* list-style: none; */
   text-align: center;
   height: 0;
-  /* overflow: hidden; */
   transition: height .3s linear;
 }
 
@@ -167,7 +165,6 @@ h1, h2, h3, h4, h5, h6
   top: 36%;
   left: 0;
   right: 0;
-  /* transform: translateX(15%); */
   font-size: 2em;
 }
 
@@ -223,7 +220,6 @@ h1, h2, h3, h4, h5, h6
 {
   width: 80%;
   margin: auto;
-  padding-bottom: 20px;
 }
 
 /*---------------------- Estilos footer ---------------------------*/
@@ -430,6 +426,7 @@ input, textarea
     height: auto;
     position: relative;
     bottom: 102px;
+    padding-bottom: 20px;
   }
 
   .classic__img
@@ -482,10 +479,23 @@ input, textarea
     margin-right: 20px;
   }
 
+  .title__acustica, .title__classic
+  {
+    font-size: 45px;
+    padding-top: 15px;
+  }
+
   .section__acustica, .section__classic
   {
     margin: 20px 0;
   }
+
+  .acustica__img
+  {
+    width: 407px;
+    bottom: 76px;
+  }
+
 
   .classic__img
   {
@@ -494,7 +504,13 @@ input, textarea
     margin: 0;
     object-fit: cover;
     position: relative;
-    bottom: 40px;
+    bottom: 54px;
+  }
+
+
+  .classic__content
+  {
+    padding-left: 56px;
   }
 }
 
@@ -522,6 +538,17 @@ input, textarea
     margin: 10px 0;
   }
 
+  .title__acustica, .title__classic
+  {
+    font-size: 50px;
+  }
+
+  .acustica__img
+  {
+    width: 350px;
+    bottom: 102px;
+  }
+
   .classic__img
   {
     width: auto;
@@ -531,6 +558,12 @@ input, textarea
     position: relative;
     bottom: 30px;
   }
+
+  .classic__content
+  {
+    padding-left: 0;
+  }
+
 
   .footer
   {
